@@ -26,7 +26,8 @@ import SnapKit
 */
 
 class ViewController: UIViewController, UITextViewDelegate {
-
+    // Public constants
+    let viewModel = ViewModel()
     // Views
     private lazy var topMoneyImageView: UIImageView = {
         let imgView = UIImageView(image: #imageLiteral(resourceName: "money"))
@@ -169,39 +170,17 @@ class ViewController: UIViewController, UITextViewDelegate {
         calculateSplitButton.addTarget(self, action: #selector(calculateSplitButtonAction), for: .touchUpInside)
     }
     
-    // Business Logic
-    func calculateTotalSplit() -> Double {
-        var split = 0.0
-        // Total Amount is 0
-        guard totalAmount > 0 else { return 0 }
-        // Total Attendees are 0
-        guard totalAttendees > 0 else { return 0 }
-        // Total Attendees are 1
-        if totalAttendees == 1 { return totalAmount }
-        
-        split = (totalAmount / totalAttendees)
-        
-        return split
-    }
-    
     // Button Action
-    
     @objc func calculateSplitButtonAction() {
-        self.totalSplit = calculateTotalSplit()
+        let splitValue = viewModel.calculateTotalSplit(totalAmount: totalAmount, totalAttendees: totalAttendees)
+        self.totalSplit = splitValue
         print("total split -> \(totalSplitValueDescription)")
         self.topSplitLabel.text = totalSplitValueDescription
     }
     
     // Textfield Delegate
-    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text.isEmpty { return true }
-        if textView.text.isEmpty && (Double(text) != nil) { return true }
-        if textView.text.contains(".") && text == "." { return false }
-        guard let _ = Double(textView.text) else {
-            return false
-        }
-        return true
+        return viewModel.validateNumericTextInput(fullText: textView.text, upcomingCharacter: text)
     }
 }
 
