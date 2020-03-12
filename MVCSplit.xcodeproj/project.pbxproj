@@ -10,11 +10,11 @@
 		435FA8DB241A0A8700AE9310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FA8DA241A0A8700AE9310 /* AppDelegate.swift */; };
 		435FA8DD241A0A8700AE9310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FA8DC241A0A8700AE9310 /* SceneDelegate.swift */; };
 		435FA8DF241A0A8700AE9310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FA8DE241A0A8700AE9310 /* ViewController.swift */; };
-		435FA8E2241A0A8700AE9310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435FA8E0241A0A8700AE9310 /* Main.storyboard */; };
 		435FA8E4241A0A8800AE9310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435FA8E3241A0A8800AE9310 /* Assets.xcassets */; };
 		435FA8E7241A0A8800AE9310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435FA8E5241A0A8800AE9310 /* LaunchScreen.storyboard */; };
 		435FA8F2241A0A8900AE9310 /* MVCSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FA8F1241A0A8900AE9310 /* MVCSplitTests.swift */; };
 		435FA8FD241A0A8900AE9310 /* MVCSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FA8FC241A0A8900AE9310 /* MVCSplitUITests.swift */; };
+		4397DE8E241A170E009F4A8C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4397DE8D241A170E009F4A8C /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		435FA8DA241A0A8700AE9310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435FA8DC241A0A8700AE9310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		435FA8DE241A0A8700AE9310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		435FA8E1241A0A8700AE9310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		435FA8E3241A0A8800AE9310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435FA8E6241A0A8800AE9310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435FA8E8241A0A8800AE9310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		435FA8F8241A0A8900AE9310 /* MVCSplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVCSplitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		435FA8FC241A0A8900AE9310 /* MVCSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCSplitUITests.swift; sourceTree = "<group>"; };
 		435FA8FE241A0A8900AE9310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4397DE8D241A170E009F4A8C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4397DE8E241A170E009F4A8C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +80,7 @@
 		435FA8CE241A0A8700AE9310 = {
 			isa = PBXGroup;
 			children = (
+				4397DE8D241A170E009F4A8C /* SnapKit.framework */,
 				435FA8D9241A0A8700AE9310 /* MVCSplit */,
 				435FA8F0241A0A8900AE9310 /* MVCSplitTests */,
 				435FA8FB241A0A8900AE9310 /* MVCSplitUITests */,
@@ -102,7 +104,6 @@
 				435FA8DA241A0A8700AE9310 /* AppDelegate.swift */,
 				435FA8DC241A0A8700AE9310 /* SceneDelegate.swift */,
 				435FA8DE241A0A8700AE9310 /* ViewController.swift */,
-				435FA8E0241A0A8700AE9310 /* Main.storyboard */,
 				435FA8E3241A0A8800AE9310 /* Assets.xcassets */,
 				435FA8E5241A0A8800AE9310 /* LaunchScreen.storyboard */,
 				435FA8E8241A0A8800AE9310 /* Info.plist */,
@@ -138,6 +139,7 @@
 				435FA8D3241A0A8700AE9310 /* Sources */,
 				435FA8D4241A0A8700AE9310 /* Frameworks */,
 				435FA8D5241A0A8700AE9310 /* Resources */,
+				4397DE8F241A17C4009F4A8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,7 +236,6 @@
 			files = (
 				435FA8E7241A0A8800AE9310 /* LaunchScreen.storyboard in Resources */,
 				435FA8E4241A0A8800AE9310 /* Assets.xcassets in Resources */,
-				435FA8E2241A0A8700AE9310 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +254,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4397DE8F241A17C4009F4A8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		435FA8D3241A0A8700AE9310 /* Sources */ = {
@@ -297,14 +319,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		435FA8E0241A0A8700AE9310 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				435FA8E1241A0A8700AE9310 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		435FA8E5241A0A8800AE9310 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVCSplit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVCSplit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
